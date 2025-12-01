@@ -5,43 +5,37 @@
 
 .mondrian {
   width: 430px;
-  height: 430px;
-  background: black;
   padding: 10px;
+  background: black;
   display: grid;
   gap: 10px;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-template-rows: 1fr 1.7fr 0.9fr 0.4fr;
+  grid-template-columns: 120px 220px 70px;
+  grid-template-rows: 80px 200px 60px 40px;
 }
 
-.mondrian > * {
-  border: 10px solid black;
-  box-sizing: border-box;
+.mondrian span { background:white; }
+
+.jessa { 
+  background:yellow;
 }
-
-.jessa { background: yellow; }
-
-.cute  {
-  background: red;
-  grid-column: span 2;
-  grid-row: span 2;
+.cute { 
+  background:red;
+  grid-column:span 2;
+  grid-row:span 2; }
+.jae {
+  background:white;
 }
-
-.jae { background: white; }
-
-.dox { background: blue; }
-
-.mad {
-  background: white;
-  grid-column: span 1;
+.dox {
+  background:blue; 
 }
-
-.ryl {
-  background: white;
+.mad { 
+  background:white; 
 }
-
-.cote {
-  background: yellow;
+.ryl { 
+  background:white;
+}
+.cote { 
+  background:yellow;
 }
 
 </style>
@@ -49,78 +43,13 @@
 <body>
 
 <div class="mondrian">
-
-  <div class="jessa"></div>
-  <div class="cute"></div>
-  <div class="jae"></div>
-  <div class="dox"></div>
-  <div class="mad"></div>
-  <div class="ryl"></div>
-  <div class="cote"></div>
-
-</div>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<style>
-
-.mondrian {
-  width: 430px;
-  height: 430px;
-  background: black;
-  padding: 10px;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-template-rows: 1fr 1.7fr 0.9fr 0.4fr;
-}
-
-.mondrian > * {
-  border: 10px solid black;
-  box-sizing: border-box;
-}
-
-.jessa { background: yellow; }
-
-.cute  {
-  background: red;
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.jae { background: white; }
-
-.dox { background: blue; }
-
-.mad {
-  background: white;
-  grid-column: span 1;
-}
-
-.ryl {
-  background: white;
-}
-
-.cote {
-  background: yellow;
-}
-
-</style>
-</head>
-<body>
-
-<div class="mondrian">
-
-  <div class="jessa"></div>
-  <div class="cute"></div>
-  <div class="jae"></div>
-  <div class="dox"></div>
-  <div class="mad"></div>
-  <div class="ryl"></div>
-  <div class="cote"></div>
-
+  <span class="jessa"></span>
+  <span class="cute"></span>
+  <span class="jae"></span>
+  <span class="dox"></span>
+  <span class="mad"></span>
+  <span class="ryl"></span>
+  <span class="cote"></span>
 </div>
 
 </body>
