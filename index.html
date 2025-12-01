@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grid Layout</title>
-
-<style>
-    .layout {
-        display: grid;
-        width: 600px;
-        height: 500px;
-        gap: 10px;
-
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-rows: 80px auto auto auto;
-
-        grid-template-areas:
-            "topLong topSmall1 topSmall2"
-            "left1 center right1"
-            "left2 center right2"
-            "left3 center right3";
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mondrian Style Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #eee;
     }
 
-    .box {
-        background: #ddd;
-        border: 2px solid #000;
+    .grid {
+      display: grid;
+      width: 90vw;
+      max-width: 600px;
+      aspect-ratio: 1 / 1;
+      grid-template-columns: 2fr 3fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      gap: 10px;
+      background: black;
+      padding: 10px;
     }
 
-    .topLong { grid-area: topLong; }
-    .topSmall1 { grid-area: topSmall1; }
-    .topSmall2 { grid-area: topSmall2; }
+    .cell {
+      background: white;
+    }
 
-    .left1 { grid-area: left1; }
-    .left2 { grid-area: left2; }
-    .left3 { grid-area: left3; }
+    .yellow { background: #f2d23c; }
+    .red { background: #d62828; }
+    .blue { background: #0057b7; }
 
-    .center { grid-area: center; }
+    /* Layout inspired by the image */
+    .yellow-top {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
 
-    .right1 { grid-area: right1; }
-    .right2 { grid-area: right2; }
-    .right3 { grid-area: right3; }
-</style>
+    .red-large {
+      grid-column: 2 / 4;
+      grid-row: 1 / 3;
+    }
+
+    .white-left-mid {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .white-bottom-left {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .blue-vert {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    .white-bottom-mid {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+    }
+
+    .white-top-right {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    .yellow-bottom-right {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="layout">
-        <div class="box topLong"></div>
-        <div class="box topSmall1"></div>
-        <div class="box topSmall2"></div>
-
-        <div class="box left1"></div>
-        <div class="box left2"></div>
-        <div class="box left3"></div>
-
-        <div class="box center"></div>
-
-        <div class="box right1"></div>
-        <div class="box right2"></div>
-        <div class="box right3"></div>
-    </div>
+  <div class="grid">
+    <div class="cell yellow yellow-top"></div>
+    <div class="cell red red-large"></div>
+    <div class="cell white-left-mid"></div>
+    <div class="cell white-bottom-left"></div>
+    <div class="cell blue blue-vert"></div>
+    <div class="cell white-bottom-mid"></div>
+    <div class="cell white-top-right"></div>
+    <div class="cell yellow yellow-bottom-right"></div>
+  </div>
 </body>
 </html>
