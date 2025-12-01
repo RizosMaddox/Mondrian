@@ -2,47 +2,68 @@
 <html>
 <head>
 <style>
-.mondrian{
-    width:460px;
-    height:460px;
-    background:black;
-    padding:10px;
-    display:grid;
-    gap:10px;
-    grid-template-columns:2fr 3fr 1fr;
-    grid-template-rows:1fr 2.2fr 1fr;
-}
-.mondrian {
-    border:8px solid black;}
 
-.jessa{
-    background-color:yellow;}
-.cute{
-    background-color:red; 
-    grid-column:span 2; 
-    grid-row:span 2;}
-.jae{
-    background-color:white;}
-.dox{
-    background-color:blue;}
-.mad{
-    background-color:white;}
-.ryl{
-    background-color:white;}
-.cote{
-    background-color:yellow;}
+.mondrian {
+  width: 460px;
+  height: 460px;
+  background: black;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 1fr 1.6fr 0.8fr 0.6fr;
+}
+
+.mondrian > * {
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+
+.jessa {
+  background: yellow;
+}
+
+.cute {
+  background: red;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.jae {
+  background: white;
+}
+
+.dox {
+  background: blue;
+}
+
+.mad {
+  background: white;
+}
+
+.ryl {
+  background: white;
+}
+
+.cote {
+  background: yellow;
+}
+
 </style>
 </head>
-
 <body>
+
 <div class="mondrian">
-    <div class="jessa"></div>
-    <div class="cute"></div>
-    <div class="jae"></div>
-    <div class="dox"></div>
-    <div class="mad"></div>
-    <div class="ryl"></div>
-    <div class="cote"></div>
+
+  <span class="jessa"></span>
+  <span class="cute"></span>
+  <span class="jae"></span>
+  <span class="dox"></span>
+  <span class="mad"></span>
+  <span class="ryl"></span>
+  <span class="cote"></span>
+
 </div>
+
 </body>
 </html>
