@@ -2,48 +2,56 @@
 <html>
 <head>
 <style>
-.grid {
+.wrapper {
   display: grid;
-  grid-template-columns: 150px 200px 100px;
-  grid-template-rows: 160px 160px 130px;
-  gap: 12px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  gap: 5px;
+  background-color: black;
 }
 
-.div { 
-  border: 12px solid black; }
-
-.banana {
-  background: yellow; }
-.tomato 
-  { background: red;
-    grid-row: span 2;
-    grid-column: span 2; }
-.rice {
- background: white; }
-bread {
- background: white; }
-milk { 
-background: white; }
-yogurt { 
-background: white; }
-blueberry { 
-background: blue; }
-lemon {
- background: yellow; }
+.a {
+  background-color: yellow;
+  grid-column: 1;
+  grid-row: 1; }
+.b { 
+  background-color: red;  
+  grid-column: 2;
+  grid-row: 1; }
+.c { 
+  background-color: white;
+  grid-column: 1;
+  grid-row: 2; }
+.d { 
+  background-color: blue; 
+  grid-column: 2;
+  grid-row: 3; }
+.e { 
+  background-color: white; 
+  grid-column: 3;
+  grid-row: 3; }
+.f {
+  background-color: white;
+  grid-column: 4;
+  grid-row: 3; }
+.g { 
+  background-color: yellow;
+  grid-column: 4;
+  grid-row: 4; }
 </style>
 </head>
-  <body>
 
-<div class="grid">
-  <div class="banana"></div>
-  <div class="tomato"></div>
-  <div class="rice"></div>
+<body>
 
-  <div class="bread"></div>
-  <div class="milk"></div>
-
-  <div class="yogurt"></div>
-  <div class="blueberry"></div>
-  <div class="lemon"></div>
+<div class="wrapper">
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+  <div class="f"></div>
+  <div class="g"></div>
 </div>
-  </body>
+
+</body>
+</html>
