@@ -2,55 +2,48 @@
 <html>
 <head>
 <style>
-
-.mondrian {
-  width: 430px;
-  padding: 10px;
-  background: black;
+.grid {
   display: grid;
-  gap: 10px;
-  grid-template-columns: 120px 220px 70px;
-  grid-template-rows: 80px 200px 60px 40px;
+  grid-template-columns: 150px 200px 100px;
+  grid-template-rows: 160px 160px 130px;
+  gap: 12px;
 }
 
-.mondrian span { background:white; }
+.div { 
+  border: 12px solid black; }
 
-.jessa { 
-  background-color:yellow;
-}
-.cute { 
-  background-color:red;
-  grid-column:span 2;
-  grid-row:span 2; }
-.jae {
-  background-color:white;
-}
-.dox {
-  background-color:blue; 
-}
-.mad { 
-  background-color:white; 
-}
-.ryl { 
-  background-color:white;
-}
-.cote { 
-  background-color:yellow;
-}
-
+.banana {
+  background: yellow; }
+.tomato 
+  { background: red;
+    grid-row: span 2;
+    grid-column: span 2; }
+.rice {
+ background: white; }
+bread {
+ background: white; }
+milk { 
+background: white; }
+yogurt { 
+background: white; }
+blueberry { 
+background: blue; }
+lemon {
+ background: yellow; }
 </style>
 </head>
-<body>
+  <body>
 
-<div class="mondrian">
-  <span class="jessa"></span>
-  <span class="cute"></span>
-  <span class="jae"></span>
-  <span class="dox"></span>
-  <span class="mad"></span>
-  <span class="ryl"></span>
-  <span class="cote"></span>
+<div class="grid">
+  <div class="banana"></div>
+  <div class="tomato"></div>
+  <div class="rice"></div>
+
+  <div class="bread"></div>
+  <div class="milk"></div>
+
+  <div class="yogurt"></div>
+  <div class="blueberry"></div>
+  <div class="lemon"></div>
 </div>
-
-</body>
-</html>
+  </body>
