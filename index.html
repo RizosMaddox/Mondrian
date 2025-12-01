@@ -8,64 +8,56 @@
 <style>
     .layout {
         display: grid;
-        gap: 10px;
         width: 600px;
+        height: 500px;
+        gap: 10px;
 
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 80px auto auto auto;
 
         grid-template-areas:
-            "top top top"
-            "l1 mid r1"
-            "l2 mid r2"
-            "l3 mid r3";
+            "topLong topSmall1 topSmall2"
+            "left1 center right1"
+            "left2 center right2"
+            "left3 center right3";
     }
 
     .box {
-        border: 2px solid #000;
         background: #ddd;
-    }
-    .top {
-        grid-area: top;
-        display: flex;
-        gap: 10px;
+        border: 2px solid #000;
     }
 
-    .pizza { flex: 3; background:#fca5a5; }
-    .burger { flex: 2; background:#fca5a5; }
-    .fries { flex: 1; background:#fca5a5; }
+    .topLong { grid-area: topLong; }
+    .topSmall1 { grid-area: topSmall1; }
+    .topSmall2 { grid-area: topSmall2; }
 
-    .salad { background:#bbf7d0; grid-area: l1; }
-    .soup { background:#bbf7d0; grid-area: l2; }
-    .bread { background:#bbf7d0; grid-area: l3; }
+    .left1 { grid-area: left1; }
+    .left2 { grid-area: left2; }
+    .left3 { grid-area: left3; }
 
-    .steak { background:#fde68a; grid-area: mid; }
+    .center { grid-area: center; }
 
-    .icecream { background:#bfdbfe; grid-area: r1; }
-    .cake { background:#bfdbfe; grid-area: r2; }
-    .juice { background:#bfdbfe; grid-area: r3; }
+    .right1 { grid-area: right1; }
+    .right2 { grid-area: right2; }
+    .right3 { grid-area: right3; }
 </style>
 </head>
 
 <body>
     <div class="layout">
+        <div class="box topLong"></div>
+        <div class="box topSmall1"></div>
+        <div class="box topSmall2"></div>
 
-        <div class="top">
-            <div class="box pizza"></div>
-            <div class="box burger"></div>
-            <div class="box fries"></div>
-        </div>
+        <div class="box left1"></div>
+        <div class="box left2"></div>
+        <div class="box left3"></div>
 
-        <div class="box salad"></div>
-        <div class="box soup"></div>
-        <div class="box bread"></div>
+        <div class="box center"></div>
 
-        <div class="box steak"></div>
-
-        <div class="box icecream"></div>
-        <div class="box cake"></div>
-        <div class="box juice"></div>
-
+        <div class="box right1"></div>
+        <div class="box right2"></div>
+        <div class="box right3"></div>
     </div>
 </body>
 </html>
